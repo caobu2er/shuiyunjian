@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop offset="0" stop-color="#07122c"/>
+      <stop offset="1" stop-color="#040816"/>
+    </linearGradient>
+    <linearGradient id="canal" x1="80" y1="430" x2="900" y2="90">
+      <stop offset="0" stop-color="#1e3a8a"/>
+      <stop offset=".5" stop-color="#3d7eff"/>
+      <stop offset="1" stop-color="#7eb6ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#1e3a6e" stroke-width=".5"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect width="960" height="540" fill="url(#grid)" opacity=".22"/>
+
+  <path d="M60 440 C180 390 280 270 420 220 C560 168 720 150 920 86" stroke="#1d4ed8" stroke-width="28" opacity=".18"/>
+  <path d="M60 440 C180 390 280 270 420 220 C560 168 720 150 920 86" stroke="url(#canal)" stroke-width="5" opacity=".8" filter="url(#glow)"/>
+  <text x="238" y="336" fill="#7eb6ff" font-family="Noto Sans SC, sans-serif" font-size="13" letter-spacing="3">京杭大运河</text>
+
+  <path d="M236 36 L276 508" stroke="#1e40af" stroke-width="7" opacity=".32"/>
+  <text x="186" y="92" fill="#8aa0c8" font-family="Noto Sans SC, sans-serif" font-size="12" transform="rotate(-78 200 140)">莫干山路</text>
+
+  <path d="M404 28 L444 512" stroke="#3d7eff" stroke-width="9" opacity=".55" filter="url(#glow)"/>
+  <path d="M404 28 L444 512" stroke="#cfe4ff" stroke-width="1.4"/>
+  <text x="338" y="86" fill="#dbeafe" font-family="Noto Sans SC, sans-serif" font-size="13" transform="rotate(-78 352 148)">湖墅南路</text>
+
+  <path d="M88 248 H872" stroke="#1e40af" stroke-width="5" opacity=".32"/>
+  <text x="780" y="238" fill="#8aa0c8" font-family="Noto Sans SC, sans-serif" font-size="12">潮王路</text>
+  <path d="M88 332 H872" stroke="#1e40af" stroke-width="5" opacity=".26"/>
+  <text x="780" y="322" fill="#8aa0c8" font-family="Noto Sans SC, sans-serif" font-size="12">德胜路</text>
+
+  <g transform="translate(308 168)">
+    <rect x="-18" y="-8" width="36" height="10" rx="2" fill="#1d4ed8" opacity=".7"/>
+    <path d="M-22 2 H22" stroke="#7eb6ff" stroke-width="2"/>
+    <path d="M-8 -8 V8 M8 -8 V8" stroke="#93c5fd" stroke-width="1.4"/>
+  </g>
+  <text x="334" y="174" fill="#cfe4ff" font-family="Noto Sans SC, sans-serif" font-size="13">拱宸桥</text>
+
+  <g transform="translate(620 148)">
+    <rect x="-14" y="-18" width="28" height="22" rx="3" fill="#10244c" stroke="#3d7eff"/>
+    <path d="M-8 -8 h16 M-8 0 h10" stroke="#7eb6ff" stroke-width="1.3"/>
+  </g>
+  <text x="644" y="154" fill="#cfe4ff" font-family="Noto Sans SC, sans-serif" font-size="13">运河博物馆</text>
+
+  <g transform="translate(168 286)">
+    <path d="M0 -10 L8 8 H-8 Z" fill="#1e40af" stroke="#7eb6ff" stroke-width="1"/>
+  </g>
+  <text x="186" y="292" fill="#8aa0c8" font-family="Noto Sans SC, sans-serif" font-size="12">小河直街</text>
+
+  <g transform="translate(452 430)">
+    <circle r="10" fill="#10244c" stroke="#3d7eff"/>
+    <circle r="3" fill="#7eb6ff"/>
+  </g>
+  <text x="470" y="436" fill="#8aa0c8" font-family="Noto Sans SC, sans-serif" font-size="12">武林门</text>
+
+  <g transform="translate(428 250)">
+    <circle r="20" fill="#3d7eff" opacity=".16"/>
+    <circle r="8" fill="#7eb6ff"/>
+    <circle r="3" fill="#fff"/>
+  </g>
+  <text x="456" y="256" fill="#e8f0ff" font-family="Noto Sans SC, sans-serif" font-size="18" font-weight="500">米市巷</text>
+
+  <text x="40" y="42" fill="#7eb6ff" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="3">HANGZHOU · GONGSHU</text>
+  <text x="40" y="68" fill="#e8f0ff" font-family="Noto Sans SC, sans-serif" font-size="20">拱墅区</text>
+</svg>

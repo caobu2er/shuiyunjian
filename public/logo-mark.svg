@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 44" fill="none">
+  <defs>
+    <linearGradient id="water" x1="8" y1="6" x2="100" y2="38">
+      <stop offset="0" stop-color="#163a8a"/>
+      <stop offset=".32" stop-color="#2563eb"/>
+      <stop offset=".62" stop-color="#3d7eff"/>
+      <stop offset="1" stop-color="#7eb6ff"/>
+    </linearGradient>
+    <linearGradient id="water2" x1="100" y1="8" x2="8" y2="36">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset=".5" stop-color="#3d7eff"/>
+      <stop offset="1" stop-color="#1e40af"/>
+    </linearGradient>
+    <filter id="mist" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="1.1" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .stream {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .run {
+        stroke-dasharray: 18 42;
+        animation: flow 3.6s linear infinite;
+      }
+      .run-slow {
+        stroke-dasharray: 10 36;
+        animation: flow 5.4s linear infinite reverse;
+      }
+      @keyframes flow {
+        to { stroke-dashoffset: -60; }
+      }
+    </style>
+  </defs>
+  <path
+    class="stream"
+    d="M16 22 C16 9 38 7 54 22 C70 37 92 35 92 22 C92 9 70 7 54 22 C38 37 16 35 16 22"
+    stroke="url(#water)"
+    stroke-width="4.6"
+    filter="url(#mist)"
+    opacity=".95"
+  />
+  <path
+    class="stream run"
+    d="M16 22 C16 9 38 7 54 22 C70 37 92 35 92 22 C92 9 70 7 54 22 C38 37 16 35 16 22"
+    stroke="#93c5fd"
+    stroke-width="1.5"
+    opacity=".85"
+  />
+  <path
+    class="stream"
+    d="M18 20 C22 11 40 10 54 22 C68 34 86 33 90 24"
+    stroke="url(#water2)"
+    stroke-width="1.2"
+    opacity=".7"
+  />
+  <path
+    class="stream run-slow"
+    d="M20 26 C28 34 42 34 54 22 C66 10 80 10 88 18"
+    stroke="#7eb6ff"
+    stroke-width="1"
+    opacity=".55"
+  />
+</svg>
